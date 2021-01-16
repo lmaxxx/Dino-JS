@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+</head>
+<body onload="drawRecordOnMainpage()">
+    <div class="app">
+        <div id="clouds-wrapper">
+            <div id="clouds"></div>
+        </div>
+        <div id="Dino" style="bottom: 0px"><img src="" alt=""></div>
+        <div id="row-wrapper">
+            <div id="row"></div>
+        </div>
+    </div>
+    <div id="ground-wrapper">
+        <div class="mainOutput-wrapper">
+            <p id="mainOutput"></p>
+        </div>
+        <div class="button-wrapper">
+            <button id="startButton">Start</button>
+        </div>
+        <div id="ground">
+        </div>
+    </div>
+    <div id="end">
+        <div>
+            <h1>Game over</h1>
+            <h1 id="output"></h1>
+            <button id="restart" onclick="game.restart()">Play again</button>
+        </div>
+    </div>
+    
+    
+
+    
+    <script src="./srcipt.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'VT323', monospace;
+    overflow: hidden;
+}
+
+.app{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-bottom: 4px solid #ccc;
+    background-image: url(./img/skycut.png)
+}
+
+#Dino{
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+}
+
+#Dino img{
+    width: 100%;
+    height: 100%;
+}
+
+#end{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    display: none;
+    z-index: 100;
+    place-items: center;
+}
+
+#end h1:first-child {
+    text-align: center;
+    color: #fff;
+    font-size: 120px;
+}
+
+#end div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#output {
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+}
+
+#mainOutput {
+    color: #000;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.mainOutput-wrapper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.kaktus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 105px;
+    z-index: 10;
+}
+
+.kaktus img {
+    width: 100%;
+    height: 100%;
+}
+
+.scoreCounter{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.background {
+    overflow: hidden;
+    height: 900px;
+    width: 100%;
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+#row{
+    width: 10000000%;
+    height: 100%;
+    background-image: url(./img/row.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+    z-index: 1;
+}
+
+#row-wrapper{
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: -20px;
+}
+
+#clouds{
+    width: 10000000%;
+    height: 100%;
+    background-image: url(./img/cloudscut.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-repeat: space;
+}
+
+#clouds-wrapper{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    height: 183px;
+}
+
+#ground {
+    width: 100000000000%;
+    background-image: url(./img/ground.jpg);
+    height: 100% ;
+}
+
+#ground-wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+
+#startButton{
+    padding: 13px 82px;
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 35px;
+    border: 0;
+    transition:  .3s;
+    background: rgba(0, 0, 0, .6);
+}
+
+.button-wrapper{ 
+    position: absolute;
+    top: 60px;
+    left: calc(100% - 50% - 117px);
+} 
+
+#startButton:hover{
+    background: rgba(0, 0, 0, .8);
+}
+
+#restart{
+    background: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'VT323', monospace;
+    padding: 18px 32px;
+    margin-top: 30px;
+}
+
+#restart:hover {
+    text-decoration: underline;
+}
+
+@keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+}
